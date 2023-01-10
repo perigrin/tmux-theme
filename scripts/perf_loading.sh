@@ -14,7 +14,7 @@ format_cpu() {
     #echo -n "#[fg=colour233,bg=colour76,bold] CPU:${load_cpu}% "
     echo -n "#[fg=colour233,bg=colour106,bold] CPU:${load_cpu}% "
   else
-    echo -n "#[fg=colour106,bg=black,bold] CPU:${load_cpu}% "
+    echo -n "#[fg='#00a595',bg=black,bold] CPU:${load_cpu}% "
   fi
 
 }
@@ -27,7 +27,7 @@ format_mem() {
     echo -n "#[fg=colour233,bg=colour142,bold] Mem:${load_mem}% "
     #echo -n "#[fg=colour233,bg=colour214,bold] Mem:${load_mem}% "
   else
-    echo -n "#[fg=colour142,bg=black,bold] Mem:${load_mem}% "
+    echo -n "#[fg='#00a595',bg=black,bold] Mem:${load_mem}% "
   fi
 }
 
@@ -38,7 +38,7 @@ format_swap() {
   if [[ "${theme_dark_mode}" = "off" ]]; then
     echo -n "#[fg=colour233,bg=colour136,bold] Swap:${load_swap}% "
   else
-    echo -n "#[fg=colour136,bg=black,bold] Swap:${load_swap}% "
+    echo -n "#[fg='#00a595',bg=black,bold] Swap:${load_swap}% "
   fi
 }
 
